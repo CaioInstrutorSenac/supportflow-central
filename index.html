@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101d30" />
+    <meta name="description" content="SupportFlow — Central de Operações e Reposição" />
+    <title>SupportFlow · Central de Operações</title>
+    <script>
+      (function () {
+        var redirect = sessionStorage.getItem("supportflow.redirect");
+        if (redirect) {
+          sessionStorage.removeItem("supportflow.redirect");
+          history.replaceState(null, "", redirect);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/supportflow-central/assets/index-hOzRKOM7.js"></script>
+    <link rel="stylesheet" crossorigin href="/supportflow-central/assets/index-MgWUGZKY.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
