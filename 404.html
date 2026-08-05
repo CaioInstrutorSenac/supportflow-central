@@ -6,7 +6,7 @@
     <title>Redirecionando · SupportFlow</title>
     <script>
       sessionStorage.setItem("supportflow.redirect", location.href);
-      location.replace("/supportflow-central/");
+      location.replace("/supportflow-central/?route=" + Date.now());
     </script>
   </head>
   <body></body>
